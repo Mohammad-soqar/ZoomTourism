@@ -23,6 +23,11 @@
 
     }
 
+    .nav-list a{
+        text-decoration: none;
+        color: #C4942F;
+    }
+
     .nav-links {
         margin-right: 0;
         cursor: pointer;
@@ -45,11 +50,19 @@
 /* Mobile */
 @media only screen and (max-width: 1300px) {
     .nav-list {
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
         height: 0;
         overflow: hidden;
         list-style-type: none;
         padding: 0 !important;
+        
+    }
 
+    .nav-list a{
+        text-decoration: none;
+        color: #C4942F;
     }
 
     .hamburger-menu {
@@ -61,7 +74,7 @@
         background-color: #292929;
         padding: 1rem 2rem 0rem 2rem;
         align-items: flex-start;
-        gap: 1rem;
+        gap: 2rem;
         
     }
 
