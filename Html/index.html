@@ -8,6 +8,8 @@
     <title>Zoom Tourism</title>
     <meta name="Authors" content="Mohammad Soqar, Mohammed AS Alazzar">
     <meta name="description" content="">
+    <link rel="icon" href="/assets/Brand/LogoPlane.png">
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/Style/style.css">
     <link rel="stylesheet" href="/Style/navbar.css">
@@ -17,7 +19,7 @@
 <body>
     <nav class="nav-bar">
         <div class="nav-header">
-            <img src="/assets/Brand/Logo.png" alt="Logo" class="logo">
+            <a href="index.html"><img src="/assets/Brand/Logo.png" alt="Logo" class="logo"></a>
             <div class="hamburger-menu">
                 <div class="bar"></div>
                 <div class="bar"></div>
@@ -25,10 +27,18 @@
             </div>
         </div>
         <ul class="nav-list">
-            <li class="nav-links">About Us</li>
-            <li class="nav-links">Trips</li>
-            <li class="nav-links">Blogs</li>
-            <li class="nav-links">Car Rental</li>
+            <a href="aboutus.html">
+                <li class="nav-links">About Us</li>
+            </a>
+            <a href="trips.html">
+                <li class="nav-links">Trips</li>
+            </a>
+            <a href="blogs.html">
+                <li class="nav-links">Blogs</li>
+            </a>
+            <a href="carRental.html">
+                <li class="nav-links">Car Rental</li>
+            </a>
         </ul>
         <!-- Include the buttons here initially hidden -->
         <div class="nav-buttons">
@@ -348,7 +358,7 @@
     <section class="experience-sec">
 
         <div>
-            <img src="/assets/Pictures/girl-xp-suitcase.png" alt="">
+            <img class="xp-girl" src="/assets/Pictures/girl-xp-suitcase.png" alt="">
         </div>
 
         <div class="experience-text-side">
@@ -374,8 +384,108 @@
 
     </section>
 
+
+    <section class="review-sec">
+        <div class="reviews-text-side">
+            <div class="reviews-text">
+                <h2>Reviews</h2>
+                <h3>What Our Customer Say About Us</h3>
+            </div>
+            <div class="reviews">
+                <button class="next-btn"><img style="max-height: 40px;" src="/assets/Icons/right-btn-arrow.png"
+                        alt=""></button>
+                <div class="review-carousel">
+
+
+                    <div class="carousel-viewport">
+                        <div class="review-card-container">
+                            <div class="review-card">
+                                <div class="review-id">
+                                    <h4>Joe Doe</h4>
+                                    <span>Software Engineer</span>
+                                </div>
+
+                                <div class="review-stars">
+                                    <img src="/assets/Icons/StarReview.png" alt="">
+                                    <img src="/assets/Icons/StarReview.png" alt="">
+                                    <img src="/assets/Icons/StarReview.png" alt="">
+                                    <img src="/assets/Icons/StarReview.png" alt="">
+                                    <img src="/assets/Icons/StarReview.png" alt="">
+                                </div>
+                                <p>“I am a traveler and Zoom helped me a lot in finding interesting tourist destinations
+                                    and
+                                    of
+                                    course
+                                    the
+                                    price offered is very worth it.”</p>
+                            </div>
+                        </div>
+
+                        <div class="review-card-container">
+                            <div class="review-card">
+                                <div class="review-id">
+                                    <h4>Joe Doe</h4>
+                                    <span>Software Engineer</span>
+                                </div>
+
+                                <div class="review-stars">
+                                    <img src="/assets/Icons/StarReview.png" alt="">
+                                    <img src="/assets/Icons/StarReview.png" alt="">
+                                    <img src="/assets/Icons/StarReview.png" alt="">
+                                    <img src="/assets/Icons/StarReview.png" alt="">
+                                    <img src="/assets/Icons/StarReview.png" alt="">
+                                </div>
+                                <p>“I am a traveler and Zoom helped me a lot in finding interesting tourist destinations
+                                    and
+                                    of
+                                    course
+                                    the
+                                    price offered is very worth it.”</p>
+                            </div>
+                        </div>
+
+                        <div class="review-card-container">
+                            <div class="review-card">
+                                <div class="review-id">
+                                    <h4>Joe Doe</h4>
+                                    <span>Software Engineer</span>
+                                </div>
+
+                                <div class="review-stars">
+                                    <img src="/assets/Icons/StarReview.png" alt="">
+                                    <img src="/assets/Icons/StarReview.png" alt="">
+                                    <img src="/assets/Icons/StarReview.png" alt="">
+                                    <img src="/assets/Icons/StarReview.png" alt="">
+                                    <img src="/assets/Icons/StarReview.png" alt="">
+                                </div>
+                                <p>“I am a traveler and Zoom helped me a lot in finding interesting tourist destinations
+                                    and
+                                    of
+                                    course
+                                    the
+                                    price offered is very worth it.”</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!--  <div class="reviews-map">
+            <img src="/assets/Pictures/reviews-map.png" alt="">
+        </div> -->
+
+
+    </section>
+
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="/Javascript/app.js"></script>
+
+
+
 </body>
 
 </html>
