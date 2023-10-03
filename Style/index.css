@@ -507,6 +507,10 @@
 
     }
 
+    .reviews-map {
+        display: none;
+    }
+
     .CustomTrip-section {
         margin-top: 8rem !important;
     }
