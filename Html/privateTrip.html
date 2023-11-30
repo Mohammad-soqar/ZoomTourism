@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Blogs</title>
+    <meta name="Authors" content="Mohammad Soqar">
+    <meta name="description" content="">
+    <link rel="icon" href="../assets/Brand/LogoPlane.png">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../Style/style.css">
+    <link rel="stylesheet" href="../Style/navbar.css">
+    <link rel="stylesheet" href="../Style/blog.css">
+    <link rel="stylesheet" href="../Style/privatetrip.css">
+</head>
+
+
+<body>
+    <nav class="nav-bar">
+        <div class="nav-header">
+            <a href="index.html"><img src="../assets/Brand/Logo.png" alt="Logo" class="logo"></a>
+            <div class="hamburger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+        <ul class="nav-list">
+            <a href="aboutus.html">
+                <li class="nav-links">About Us</li>
+            </a>
+            <a href="trips.html">
+                <li class="nav-links">Trips</li>
+            </a>
+            <a href="blogs.html">
+                <li class="nav-links">Blogs</li>
+            </a>
+            <a href="carRental.html">
+                <li class="nav-links">Car Rental</li>
+            </a>
+        </ul>
+        <!-- Include the buttons here initially hidden -->
+        <div class="nav-buttons">
+            <button class="Transperent-brand-btn">Login</button>
+            <button class="brand-background-btn">Sign up</button>
+        </div>
+    </nav>
+
+
+
+
+
+    <section class="BlogSection">
+
+
+
+
+        <div class="trips-choosing-container">
+            <h2>Select your desired destinations: </h2>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search for trips...">
+            </div>
+
+            <ul id="blog-list" class="blogBox">
+                <li class="trip-choosing">
+                    <label>
+                        <input type="checkbox" name="" id="">
+                        <div class="trip-choosing-content">
+                            <img src="/assets/trips/kapadokya.png" height="100px" alt="">
+                            <h3>Istanbul</h3>
+                        </div>
+                    </label>
+                </li>
+
+                <li class="trip-choosing">
+                    <label>
+                        <input type="checkbox" name="" id="">
+                        <div class="trip-choosing-content">
+                            <img src="/assets/trips/kapadokya.png" height="100px" alt="">
+                            <h3>Istanbul</h3>
+                        </div>
+                    </label>
+                </li>
+
+                <li class="trip-choosing">
+                    <label>
+                        <input type="checkbox" name="" id="">
+                        <div class="trip-choosing-content">
+                            <img src="/assets/trips/kapadokya.png" height="100px" alt="">
+                            <h3>Istanbul</h3>
+                        </div>
+                    </label>
+                </li>
+
+                <li class="trip-choosing">
+                    <label>
+                        <input type="checkbox" name="" id="">
+                        <div class="trip-choosing-content">
+                            <img src="/assets/trips/kapadokya.png" height="100px" alt="">
+                            <h3>Bursa</h3>
+                        </div>
+                    </label>
+                </li>
+
+                <li class="trip-choosing">
+                    <label>
+                        <input type="checkbox" name="" id="">
+                        <div class="trip-choosing-content">
+                            <img src="/assets/trips/kapadokya.png" height="100px" alt="">
+                            <h3>Istanbul</h3>
+                        </div>
+                    </label>
+                </li>
+                <li class="trip-choosing">
+                    <label>
+                        <input type="checkbox" name="" id="">
+                        <div class="trip-choosing-content">
+                            <img src="/assets/trips/kapadokya.png" height="100px" alt="">
+                            <h3>Istanbul</h3>
+                        </div>
+                    </label>
+                </li>
+                <li class="trip-choosing">
+                    <label>
+                        <input type="checkbox" name="" id="">
+                        <div class="trip-choosing-content">
+                            <img src="/assets/trips/kapadokya.png" height="100px" alt="">
+                            <h3>Istanbul</h3>
+                        </div>
+                    </label>
+                </li>
+                <li class="trip-choosing ">
+                    <label>
+                        <input type="checkbox" name="" id="">
+                        <div class="trip-choosing-content">
+                            <img src="/assets/trips/kapadokya.png" height="100px" alt="">
+                            <h3>Istanbul</h3>
+                        </div>
+                    </label>
+                </li>
+
+            </ul>
+            <button id="viewAllButton">View All</button>
+            <button id="showLessButton" style="display: none;">Show Less</button>
+
+        </div>
+
+
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('label').on('click', function () {
+                var checkbox = $(this).find('input[type="checkbox"]');
+                checkbox.prop('checked', !checkbox.prop('checked'));
+            });
+        });
+        $(document).ready(function () {
+            var $tripItems = $('.trip-choosing');
+            var $viewAllButton = $('#viewAllButton');
+            var $showLessButton = $('#showLessButton');
+            var $searchInput = $('#searchInput');
+
+            // Initially hide extra items beyond the specified number
+            $tripItems.slice(6).addClass('hidden');
+
+            // Show all items and hide "View All" button when "View All" is clicked
+            $viewAllButton.on('click', function () {
+                $tripItems.removeClass('hidden');
+                $viewAllButton.hide();
+                $showLessButton.show();
+            });
+
+            // Hide extra items and show "View All" button when "Show Less" is clicked
+            $showLessButton.on('click', function () {
+                $tripItems.slice(6).addClass('hidden');
+                $showLessButton.hide();
+                $viewAllButton.show();
+            });
+
+            // Search functionality
+            $searchInput.on('input', function () {
+                var searchTerm = $(this).val().toLowerCase();
+                $tripItems.each(function () {
+                    var tripTitle = $(this).find('h3').text().toLowerCase();
+                    if (tripTitle.includes(searchTerm) || searchTerm === '') {
+                        $(this).removeClass('hidden');
+                    } else {
+                        $(this).addClass('hidden');
+                    }
+                });
+            });
+        });
+
+
+
+    </script>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../Javascript/app.js"></script>
+    <script src="../Javascript/search.js"></script>
+</body>
+
+</html>

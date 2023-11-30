@@ -47,6 +47,15 @@
     border-radius: 10px;
 }
 
+.carousel-control {
+    background: #C4942F;
+    border-radius: 50%;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
 .gallery h2 {
     color: #fff;
     font-size: 2em;
@@ -56,13 +65,21 @@
     margin-bottom: 20px;
 }
 
+.main-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .main-image img {
+
     max-width: 100%;
 }
 
 .thumbnails {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-top: 20px;
 }
 

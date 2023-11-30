@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="">
+</head>
+
+<body>
+  <input type="text" id="searchInput" placeholder="Search...">
+
+  <ul id="resultsList"></ul>
+
+  <!-- Your existing CRM links -->
+  <script>
+    var crmLinks = [
+      { name: "Cars Dashboard", area: "Admin", controller: "Home", action: "CarsDashboard" },
+      // Add more links as needed
+    ];
+  </script>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+  document.getElementById("searchInput").addEventListener("input", function () {
+    var searchInput = this.value.toLowerCase();
+    var resultsList = document.getElementById("resultsList");
+    resultsList.innerHTML = ""; // Clear previous results
+
+    // Filter links based on search input
+    var matchingLinks = crmLinks.filter(function (link) {
+      return link.name.toLowerCase().includes(searchInput);
+    });
+
+    // Display matching links
+    matchingLinks.forEach(function (link) {
+      var listItem = document.createElement("li");
+      var linkElement = document.createElement("a");
+
+      // Construct the URL based on link information
+      var url = "/" + (link.area ? link.area + "/" : "") +
+        (link.controller ? link.controller + "/" : "") +
+        (link.action ? link.action : "");
+
+      linkElement.href = url;
+      linkElement.textContent = link.name;
+      listItem.appendChild(linkElement);
+      resultsList.appendChild(listItem);
+    });
+  });
+
+
+</script>
+
+</html>
