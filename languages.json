@@ -1,10 +1,10 @@
 {
     "en": {
         "welcome_message": "Welcome to our website!",
-        "about_us": "About us..."
+        "about_us": "About us."
     },
     "es": {
         "welcome_message": "¡Bienvenidos a nuestro sitio web!",
-        "about_us": "Acerca de nosotros..."
+        "about_us": "Acerca de nosotros."
     }
 }

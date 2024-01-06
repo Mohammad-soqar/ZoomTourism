@@ -7,7 +7,7 @@ $(document).ready(function () {
       var removedStr = myStr.substring(maxLength, $.trim(myStr).length);
       $(this).empty().html(newStr);
       $(this).append(
-        ' <span href="javascript:void(0);" class="read-more">...</span>'
+        ' <span href="javascript:void(0);" class="read-more">.</span>'
       );
       $(this).append('<span class="more-text">' + removedStr + "</span>");
     }

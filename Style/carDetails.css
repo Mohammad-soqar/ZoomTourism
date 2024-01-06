@@ -6,7 +6,7 @@
     z-index: -1;
     height: 80%;
     filter: blur(15px);
-    background-image: url(../assets/Cars/Mercedes-Benz-Vito-face.jpg);
+    background-image: url(/assets/Cars/Mercedes-Benz-Vito-face.jpg);
     background-size: cover;
     background-position: center;
 
