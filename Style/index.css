@@ -1,7 +1,9 @@
 .img-text-section {
     display: flex;
-   
+
 }
+
+
 
 
 @media only screen and (min-width: 1300px) {
@@ -23,27 +25,27 @@
         position: relative;
     }
 
-        .text-side h1 {
-            font-size: 4em;
-            color: #292929;
-            font-weight: 600;
-            position: relative;
-        }
+    .text-side h1 {
+        font-size: 4em;
+        color: #292929;
+        font-weight: 600;
+        position: relative;
+    }
 
-        .text-side h3 {
-            font-size: 2em;
-            color: #292929;
-            font-weight: 700;
-            width: 90%;
-            position: relative;
-        }
+    .text-side h3 {
+        font-size: 2em;
+        color: #292929;
+        font-weight: 700;
+        width: 90%;
+        position: relative;
+    }
 
-        .text-side h2 {
-            color: #C4942F;
-            font-weight: 700;
-            width: 90%;
-            position: relative;
-        }
+    .text-side h2 {
+        color: #C4942F;
+        font-weight: 700;
+        width: 90%;
+        position: relative;
+    }
 
 
     .CustomTrip-img {
@@ -137,13 +139,13 @@
         width: 35%;
     }
 
-        .value h3 {
-            text-align: left;
-        }
+    .value h3 {
+        text-align: left;
+    }
 
-        .value p {
-            text-align: left;
-        }
+    .value p {
+        text-align: left;
+    }
 
     .dashed-line {
         border: 2px dashed #C4942F;
@@ -162,16 +164,16 @@
         gap: 1rem;
     }
 
-        .section-title-text h2 {
-            color: #C4942F;
-            font-size: .9em;
-            font-weight: 600;
-        }
+    .section-title-text h2 {
+        color: #C4942F;
+        font-size: .9em;
+        font-weight: 600;
+    }
 
-        .section-title-text h3 {
-            font-size: 2em;
-            font-weight: 600;
-        }
+    .section-title-text h3 {
+        font-size: 2em;
+        font-weight: 600;
+    }
 
     .carousel-container {
         position: relative;
@@ -221,18 +223,18 @@
         gap: 1rem;
     }
 
-        .trip-title h3 {
-            font-size: 1.4em;
-            width: 70%;
-            font-weight: 600;
-            text-align: start;
-        }
+    .trip-title h3 {
+        font-size: 1.4em;
+        width: 70%;
+        font-weight: 600;
+        text-align: start;
+    }
 
-        .trip-title p {
-            font-size: 1em;
-            font-weight: 500;
-            text-align: start;
-        }
+    .trip-title p {
+        font-size: 1em;
+        font-weight: 500;
+        text-align: start;
+    }
 
     .rating {
         display: flex;
@@ -241,10 +243,10 @@
         font-weight: 600;
     }
 
-        .rating span {
-            font-size: .8em;
-            opacity: 70%;
-        }
+    .rating span {
+        font-size: .8em;
+        opacity: 70%;
+    }
 
     .star-rating {
         display: flex;
@@ -293,17 +295,17 @@
         flex: 0 0 calc(33.33% - 20px);
         /* Display 3 items on desktop with 20px gap */
         padding: 10px;
-        text-decoration:none;
-        color:#282828;
+        text-decoration: none;
+        color: #282828;
         text-align: center;
         transition: transform 0.3s ease-in-out;
         /* Add smooth animation */
     }
 
-        .carousel-item img {
-            max-width: 100%;
-            border-radius:22px;
-        }
+    .carousel-item img {
+        max-width: 100%;
+        border-radius: 22px;
+    }
 
     .carousel-item-details {
         flex: 0 0 calc(24.33% - 20px);
@@ -314,10 +316,10 @@
         /* Add smooth animation */
     }
 
-        .carousel-item-details img {
-            max-width: 100%;
-            border-radius:22px;
-        }
+    .carousel-item-details img {
+        max-width: 100%;
+        border-radius: 22px;
+    }
 
     /* Styles for navigation buttons */
     .carousel-control {
@@ -358,40 +360,40 @@
     }
 
 
-        .experience-text-side h3 {
-            font-size: 2em;
-            color: #292929;
-            font-weight: 700;
-            width: 90%;
-            position: relative;
-        }
+    .experience-text-side h3 {
+        font-size: 2em;
+        color: #292929;
+        font-weight: 700;
+        width: 90%;
+        position: relative;
+    }
 
-        .experience-text-side h2 {
-            color: #C4942F;
-            font-weight: 700;
-            width: 90%;
-            position: relative;
-        }
+    .experience-text-side h2 {
+        color: #C4942F;
+        font-weight: 700;
+        width: 90%;
+        position: relative;
+    }
 
     .experience-items {
         display: flex;
         justify-content: space-between;
     }
 
-        .experience-items h4 {
-            color: #C4942F;
-            font-weight: 700;
-            font-size: 2em;
-            position: relative;
-        }
+    .experience-items h4 {
+        color: #C4942F;
+        font-weight: 700;
+        font-size: 2em;
+        position: relative;
+    }
 
-        .experience-items p {
-            font-size: 1em;
-            color: #7A7A7A;
-            width: 90%;
-            font-weight: 500;
-            position: relative;
-        }
+    .experience-items p {
+        font-size: 1em;
+        color: #7A7A7A;
+        width: 90%;
+        font-weight: 500;
+        position: relative;
+    }
 
     .xp-item {
         display: flex;
@@ -421,20 +423,20 @@
         gap: 2rem;
     }
 
-        .reviews-text h3 {
-            font-size: 2em;
-            color: #292929;
-            font-weight: 700;
-            width: 90%;
-            position: relative;
-        }
+    .reviews-text h3 {
+        font-size: 2em;
+        color: #292929;
+        font-weight: 700;
+        width: 90%;
+        position: relative;
+    }
 
-        .reviews-text h2 {
-            color: #C4942F;
-            font-weight: 700;
-            width: 90%;
-            position: relative;
-        }
+    .reviews-text h2 {
+        color: #C4942F;
+        font-weight: 700;
+        width: 90%;
+        position: relative;
+    }
 
     .reviews-text-side {
         width: 50%;
@@ -491,10 +493,10 @@
         gap: .5rem;
     }
 
-        .review-id h4 {
-            font-size: 1.5em;
-            font-weight: 600;
-        }
+    .review-id h4 {
+        font-size: 1.5em;
+        font-weight: 600;
+    }
 }
 
 @media only screen and (max-width: 720px) {
@@ -562,32 +564,34 @@
         justify-content: center;
         gap: 2rem;
         position: relative;
+        align-items: center;
+
     }
 
-        .text-side h1 {
-            font-size: 2.5em;
-            color: #292929;
-            font-weight: 600;
-            position: relative;
-        }
+    .text-side h1 {
+        font-size: 2.5em;
+        color: #292929;
+        font-weight: 600;
+        position: relative;
+    }
 
-        .text-side p {
-            font-size: 1em;
-            color: #7A7A7A;
-            width: 90%;
-            line-height: 1.3rem;
-            text-align: justify;
-            font-weight: 500;
-            position: relative;
-        }
+    .text-side p {
+        font-size: 1em;
+        color: #7A7A7A;
+        width: 90%;
+        line-height: 1.3rem;
+        text-align: justify;
+        font-weight: 500;
+        position: relative;
+    }
 
-        .text-side a {
-            font-size: 1em;
-            color: #fff;
-            text-align: justify;
-            font-weight: 600;
-            position: relative;
-        }
+    .text-side a {
+        font-size: 1em;
+        color: #fff;
+        text-align: justify;
+        font-weight: 600;
+        position: relative;
+    }
 
     .value-section {
         background-color: #292929;
@@ -615,10 +619,10 @@
         align-items: center;
     }
 
-        .top-values h2 {
-            font-size: 2.3em;
-            font-weight: 600;
-        }
+    .top-values h2 {
+        font-size: 2.3em;
+        font-weight: 600;
+    }
 
     .value-sec-title {
         display: flex;
@@ -651,9 +655,9 @@
         gap: 0.4rem;
     }
 
-        .value-para img {
-            display: none !important;
-        }
+    .value-para img {
+        display: none !important;
+    }
 
     .value {
         display: flex;
@@ -663,14 +667,14 @@
         gap: 0.4rem;
     }
 
-        .value h3 {
-            text-align: center;
-            font-size: 1.4em;
-        }
+    .value h3 {
+        text-align: center;
+        font-size: 1.4em;
+    }
 
-        .value p {
-            text-align: center;
-        }
+    .value p {
+        text-align: center;
+    }
 
     .carousel-container {
         display: none !important;
@@ -699,18 +703,18 @@
         display: inline-block;
     }
 
-        .image-container::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            border-radius:22px;
-            left: 0;
-            width: 100%;
-            border-radius: 16.42px;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
-            pointer-events: none;
-        }
+    .image-container::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        border-radius: 22px;
+        left: 0;
+        width: 100%;
+        border-radius: 16.42px;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        pointer-events: none;
+    }
 
 
     .trip-title-mobile h3 {
@@ -781,16 +785,16 @@
         gap: 1rem;
     }
 
-        .section-title-text h2 {
-            color: #C4942F;
-            font-size: .6em;
-            font-weight: 600;
-        }
+    .section-title-text h2 {
+        color: #C4942F;
+        font-size: .6em;
+        font-weight: 600;
+    }
 
-        .section-title-text h3 {
-            font-size: 1.7em;
-            font-weight: 600;
-        }
+    .section-title-text h3 {
+        font-size: 1.7em;
+        font-weight: 600;
+    }
 
     .top-dest-sec {
         display: flex;
@@ -805,11 +809,12 @@
 
     .experience-sec {
         display: inline-flex;
+        width: 98%;
         justify-content: center;
         align-items: center;
         gap: 2rem;
         flex-direction: column;
-        margin: 8rem 1rem 0rem 1rem;
+        margin: 8rem 1% 0rem 1%;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -844,23 +849,22 @@
     .experience-items {
         display: flex;
         justify-content: space-between;
-        flex-direction:column;
     }
 
-        .experience-items h4 {
-            color: #C4942F;
-            font-weight: 700;
-            font-size: 2em;
-            position: relative;
-        }
+    .experience-items h4 {
+        color: #C4942F;
+        font-weight: 700;
+        font-size: 2em;
+        position: relative;
+    }
 
-        .experience-items p {
-            font-size: 1em;
-            color: #7A7A7A;
-            width: 90%;
-            font-weight: 500;
-            position: relative;
-        }
+    .experience-items p {
+        font-size: 1em;
+        color: #7A7A7A;
+        width: 90%;
+        font-weight: 500;
+        position: relative;
+    }
 
     .xp-item {
         display: flex;
@@ -893,20 +897,20 @@
         gap: 2rem;
     }
 
-        .reviews-text h3 {
-            font-size: 2em;
-            color: #292929;
-            font-weight: 700;
-            width: 90%;
-            position: relative;
-        }
+    .reviews-text h3 {
+        font-size: 2em;
+        color: #292929;
+        font-weight: 700;
+        width: 90%;
+        position: relative;
+    }
 
-        .reviews-text h2 {
-            color: #C4942F;
-            font-weight: 700;
-            width: 90%;
-            position: relative;
-        }
+    .reviews-text h2 {
+        color: #C4942F;
+        font-weight: 700;
+        width: 90%;
+        position: relative;
+    }
 
     .reviews-text-side {
         display: flex;
@@ -963,10 +967,10 @@
         gap: .5rem;
     }
 
-        .review-id h4 {
-            font-size: 1.5em;
-            font-weight: 600;
-        }
+    .review-id h4 {
+        font-size: 1.5em;
+        font-weight: 600;
+    }
 }
 
 
